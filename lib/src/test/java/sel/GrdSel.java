@@ -16,8 +16,8 @@ public class GrdSel {
 	@Test
 	public void googleTest() throws MalformedURLException {
 		WebDriverManager.chromedriver().driverVersion("92").setup();
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless", "--window-size=1920,1200");
+		//ChromeOptions options = new ChromeOptions();
+		//options.addArguments("--headless", "--window-size=1920,1200");
 
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities); // I have altered
